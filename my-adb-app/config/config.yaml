@@ -1,0 +1,17 @@
+app:
+  name: My adb
+  path: "/home/itra/my_adb"
+
+screenshot:
+  path: "/home/itra/screenshots"
+
+commands:
+  - cmd: "adb connect 192.168.1.2:2111"
+    description: "connect"
+
+  - cmd: "adb uninstall"
+    description: "uninstall"
+    passListPackage: true
+
+apps:
+  - packageName: "com.example.playground"
